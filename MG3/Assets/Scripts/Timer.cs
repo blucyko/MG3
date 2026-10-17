@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Timer : MonoBehaviour
@@ -10,7 +11,13 @@ public class Timer : MonoBehaviour
     //
     // Make sure to TUNE this value in the INSPECTOR after you create it!
 
-    private float time;
+    [SerializeField] private float time;
+
+    // Test variables for the initial values of these variable types for the devlog
+    [SerializeField] private int testInt;
+    [SerializeField] private bool testBool;
+    [SerializeField] private float testFloat;
+    [SerializeField] private string testString;
 
     // STEP 1 -----------------------------------------------------------------
 
